@@ -1,10 +1,10 @@
 #!/bin/bash
 
+INST_GO = go1.17.5.linux-amd64.tar.gz
+
 sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove -y
-
-INST_GO = "go1.17.5.linux-amd64.tar.gz"
 
 sudo apt-get update && sudo apt-get install wget git curl net-tools build-essential make -y
 wget https://go.dev/dl/$INST_GO
